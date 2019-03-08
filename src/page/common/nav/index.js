@@ -32,9 +32,10 @@ var nav = {
 
     //加载用户信息
     loadUserInfo:function () {
-        _user.checkLogin(function (res) {
-            $(".user.not-login").hide().siblings('.usesr.login').show()
-                .find('.username').text(res.username)
+        _user.checkLogin(function(res) {
+            $(".user.not-login").hide();
+            $(".user.login").show();
+            $(".username").text(res.username)
         },function (err) {
         })
     },

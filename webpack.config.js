@@ -25,8 +25,10 @@ var config = {
         'common':['./src/page/common/index.js'],
         'index':['./src/page/index/index.js'],
         'login':['./src/page/login/index.js'],
-        'result':['./src/page/result/index.js']
-
+        'result':['./src/page/result/index.js'],
+        'register':['./src/page/register/index.js'],
+        'user-center':['./src/page/user-center/index.js'],
+        'user-center-update':['./src/page/user-center-update/index.js']
     },
     output:{
         path:__dirname,
@@ -44,7 +46,10 @@ var config = {
         //html模板的处理
         new HtmlWebpackPlugin(getHtmlConfig('index')),
         new HtmlWebpackPlugin(getHtmlConfig('login')),
-        new HtmlWebpackPlugin(getHtmlConfig('result'))
+        new HtmlWebpackPlugin(getHtmlConfig('result')),
+        new HtmlWebpackPlugin(getHtmlConfig('register')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-center')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-center-update'))
 
     ],
     module: {

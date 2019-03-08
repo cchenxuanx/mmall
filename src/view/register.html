@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <%= require('html-loader!./layout/head-common.html') %>
-    <title>用户登陆 - happymmall电商平台</title>
+    <title>用户注册 - happymmall电商平台</title>
 </head>
 <body>
 <%= require('html-loader!./layout/nav-simple.html') %>
@@ -10,7 +10,7 @@
     <div class="w">
         <div class="user-con">
             <div class="user-title">
-                用户登陆
+                用户注册
             </div>
             <div class="user-box">
                 <div class="user-item">
@@ -27,16 +27,36 @@
                     <input type="password" class="user-content" id="password" placeholder="请输入密码" autocomplete="off">
                 </div>
 
+                <div class="user-item">
+                    <label class="user-label">
+                        <i class="fa fa-lock"></i>
+                    </label>
+                    <input type="password" class="user-content" id="password-confirm" placeholder="请再次输入密码" autocomplete="off">
+                </div>
+
+                <div class="user-item">
+                    <label class="user-label">
+                        <i class="fa fa-phone"></i>
+                    </label>
+                    <input class="user-content" id="phone" placeholder="请输入手机号">
+                </div>
+
+                <div class="user-item">
+                    <label class="user-label">
+                        <i class="fa fa-envelope"></i>
+                    </label>
+                    <input class="user-content" id="email" placeholder="请输入邮箱">
+                </div>
+
                 <div class="error-item">
                     <i class="fa fa-minus-circle error-icon"></i>
                     <p class="err-msg">ERROR</p>
                 </div>
 
-                <a class="btn btn-submit" id="submit">登陆</a>
+                <a class="btn btn-submit" id="submit">立即注册</a>
 
                 <div class="link-item">
-                    <a class="link" href="./user-pass-reset.html" target="_blank">忘记密码</a>
-                    <a class="link" href="./user-register.html" target="_blank">免费注册</a>
+                    <a class="link" href="./login.html" target="_blank">已有账号,立即登陆 >></a>
                 </div>
 
             </div>

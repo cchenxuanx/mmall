@@ -57,7 +57,7 @@ var _mm = {
         alert(res||"成功");
     },
     errorTips:function (err) {
-        alert(res||"错误");
+        alert(err||"错误");
     },
     //信息验证,是否为空、手机、邮箱
     validate:function (value,type) {
