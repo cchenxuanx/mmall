@@ -22,10 +22,11 @@ var getHtmlConfig = function(name){
 
 var config = {
     entry:{
-        'common':['./src/page/common/index.js','webpack-dev-server/client?http://localhost:8088/'],
+        'common':['./src/page/common/index.js'],
         'index':['./src/page/index/index.js'],
         'login':['./src/page/login/index.js'],
-        // 'common':['./src/page/common/index.js','webpack-dev-server/client?http://localhost:8088/']
+        'result':['./src/page/result/index.js']
+
     },
     output:{
         path:__dirname,
@@ -42,17 +43,29 @@ var config = {
         new Ex("./dist/css/[name].css"),
         //html模板的处理
         new HtmlWebpackPlugin(getHtmlConfig('index')),
-        new HtmlWebpackPlugin(getHtmlConfig('login'))
+        new HtmlWebpackPlugin(getHtmlConfig('login')),
+        new HtmlWebpackPlugin(getHtmlConfig('result'))
+
     ],
     module: {
         loaders: [{
             test: /\.css$/,
             loader: Ex.extract('style-loader', 'css-loader','less-loader')  // 单独打包出CSS，这里配置注意下
-        },
+            },
             {
                 test: /\.(gif|png|jpg|jpeg|woff|svg|eot|ttf)\??.*$/,
                 loader: 'url-loader?limit=100&name=/dist/resource/[name].[ext]'
-            }]
+            },
+            {
+                test: /\.string$/,
+                loader: 'html-loader'
+            }
+            ]
+
+    },
+    devServer: {
+
+        disableHostCheck: true
 
     }
 };
