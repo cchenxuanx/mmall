@@ -10,5 +10,14 @@ var _cart = {
             error:reject
         })
     },
+    //添加购物车
+    addToCart:function (product,resolve,reject) {
+        mm.request({
+            url:mm.getServerUrl('/cart/add.do'),
+            data:product,
+            success:resolve,
+            error:reject
+        })
+    },
 };
 module.exports = _cart;
