@@ -1,0 +1,111 @@
+.cart-table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ebebeb;
+    margin-bottom: 10px;
+}
+
+.cart-header{
+    background: #eee;
+
+}
+.cart-header .cart-cell{
+    height: 40px;
+    line-height: 40px;
+}
+
+.cart-table .cell-check{
+    width: 10%;
+    margin-left: 10px;
+    text-align: center;
+}
+.cart-table .cell-info{
+    height: 60px;
+    width: 35%;
+    text-align: center;
+    line-height: 60px;
+}
+
+.cart-table .cell-price{
+    width: 10%;
+    text-align: center;
+}
+.cart-table .cell-count{
+    width: 15%;
+    text-align: center;
+}
+
+.cart-table .cell-total{
+    width: 15%;
+    text-align: center;
+    font-weight: bold;
+}
+.cart-table .cell-opera{
+    width: 10%;
+    text-align: center;
+}
+.cart-table .p-img{
+    float: left;
+    margin: 5px 0 5px 0;
+    height: 100%;
+}
+
+.cart-table .cell-count .count-input{
+    width: 60px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #ddd;
+    text-align: center;
+    vertical-align: middle;
+    outline: none;
+}
+
+.cart-table .cell-count .count-btn{
+    display: inline-block;
+    width: 20px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+    cursor: pointer;
+    background: #fff;
+    text-align: center;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*footer*/
+.cart-footer{
+    width: 100%;
+    overflow: hidden;
+}
+.select-con{
+    padding-left: 20px;
+    display: inline-block;
+}
+.delete-con{
+    padding-left: 20px;
+    display: inline-block;
+}
+.submit-con{
+    display: inline-block;
+    float: right;
+}
+.submit-total{
+    font-size:18px;
+    color: #e80012;
+    font-weight: bold;
+    margin-right: 30px;
+    vertical-align: middle;
+}
+.err{
+    height: 60px;
+    line-height: 60px;
+    color: #f60;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    background: #eee;
+}

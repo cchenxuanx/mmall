@@ -26,6 +26,7 @@ var config = {
         'index':['./src/page/index/index.js'],
         'list':['./src/page/list/index.js'],
         'detail':['./src/page/detail/index.js'],
+        'cart':['./src/page/cart/index.js'],
         'login':['./src/page/login/index.js'],
         'result':['./src/page/result/index.js'],
         'register':['./src/page/register/index.js'],
@@ -53,7 +54,8 @@ var config = {
         new HtmlWebpackPlugin(getHtmlConfig('user-center')),
         new HtmlWebpackPlugin(getHtmlConfig('user-center-update')),
         new HtmlWebpackPlugin(getHtmlConfig('list')),
-        new HtmlWebpackPlugin(getHtmlConfig('detail'))
+        new HtmlWebpackPlugin(getHtmlConfig('detail')),
+        new HtmlWebpackPlugin(getHtmlConfig('cart'))
 
     ],
     module: {
