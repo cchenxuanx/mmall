@@ -1,4 +1,4 @@
-
+//localhost.charlesproxy.com
 
 var webpack = require('webpack');
 var Ex = require('extract-text-webpack-plugin');
@@ -27,11 +27,13 @@ var config = {
         'list':['./src/page/list/index.js'],
         'detail':['./src/page/detail/index.js'],
         'cart':['./src/page/cart/index.js'],
+        'order-confirm':['./src/page/order-confirm/index.js'],
         'login':['./src/page/login/index.js'],
         'result':['./src/page/result/index.js'],
         'register':['./src/page/register/index.js'],
         'user-center':['./src/page/user-center/index.js'],
-        'user-center-update':['./src/page/user-center-update/index.js']
+        'user-center-update':['./src/page/user-center-update/index.js'],
+        'payment':['./src/page/payment/index.js']
     },
     output:{
         path:__dirname,
@@ -55,7 +57,9 @@ var config = {
         new HtmlWebpackPlugin(getHtmlConfig('user-center-update')),
         new HtmlWebpackPlugin(getHtmlConfig('list')),
         new HtmlWebpackPlugin(getHtmlConfig('detail')),
-        new HtmlWebpackPlugin(getHtmlConfig('cart'))
+        new HtmlWebpackPlugin(getHtmlConfig('cart')),
+        new HtmlWebpackPlugin(getHtmlConfig('order-confirm')),
+        new HtmlWebpackPlugin(getHtmlConfig('payment'))
 
     ],
     module: {

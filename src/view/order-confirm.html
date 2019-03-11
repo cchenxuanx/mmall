@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%= require('html-loader!./layout/head-common.html') %>
+    <title>订单详情 - happymmall电商平台</title>
+</head>
+<body>
+<%= require('html-loader!./layout/nav.html') %>
+<%= require('html-loader!./layout/header.html') %>
+<div class="crumb">
+    <div class="w">
+        <div class="crumb-con">
+            <a class="link" href="./index.html">MMall</a>
+            <span>></span>
+            <span>订单详情</span>
+        </div>
+    </div>
+
+</div>
+
+<div class="page-wrap w">
+    <div class="panel">
+        <h1 class="panel-title">收货地址</h1>
+        <div class="panel-body address-con">
+
+            <div class="address-item active">
+                <div class="address-title">
+                    上海市 上海市 陈选 收
+                </div>
+                <div class="address-detail">
+
+                </div>
+                <div class="address-opera">
+                    <span class="link address-update">编辑</span>
+                    <span class="link address-delete">删除</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="panel">
+        <h1 class="panel-title">商品清单</h1>
+        <div class="panel-body product-con">
+
+
+        </div>
+    </div>
+</div>
+
+<%= require('html-loader!./layout/footer.html') %>
+</body>
+</html>

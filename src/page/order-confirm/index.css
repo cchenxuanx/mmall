@@ -1,0 +1,106 @@
+.address-item,
+.address-add{
+    margin: 20px 20px 0 0;
+    width: 200px;
+    padding: 5px;
+    float: left;
+    border: 3px dashed #ccc;
+    cursor: pointer;
+}
+.address-item:hover{
+    background: #eee;
+}
+
+.address-item:hover .address-opera{
+    visibility: visible;
+}
+.address-item .address-title{
+    color: #666;
+    height: 20px;
+    line-height: 20px;
+    overflow: scroll;
+    border-bottom: 1px solid #ddd;
+}
+.address-item .address-detail{
+    margin-top: 5px;
+    height: 40px;
+    line-height: 40px;
+    overflow: scroll;
+    color: #666;
+}
+.address-item .address-opera{
+    text-align: right;
+    visibility: hidden
+}
+.address-item .address-opera .link{
+    margin-right: 5px
+}
+.address-item .address-new{
+    padding: 8px 0 8px 0;
+    text-align: center;
+    color: #ccc;
+}
+.address-item .address-new .fa{
+    font-size: 50px;
+}
+.address-item.active{
+    border: 3px dashed #c60023;
+}
+
+.product-table{
+    width: 100%;
+    margin:10px 0;
+    border-collapse: collapse;
+}
+.product-table .th,.product-table .td{
+    border-bottom: 1px dotted #ddd;
+}
+
+
+
+.product-table .cell-img{
+    width: 10%;
+    text-align: center;
+    padding: 10px;
+}
+.product-table .cell-img .p-img{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ddd;
+}
+
+
+.product-table .cell-info{
+    width: 30%;
+    text-align: left;
+}
+.product-table .cell-price{
+    width: 20%;
+    text-align: center;
+}
+.product-table .cell-count{
+    width: 20%;
+    text-align: center;
+}
+.product-table .cell-total{
+    width: 20%;
+    text-align: center;
+}
+
+.submit-con{
+    background: #eee;
+    text-align: right;
+}
+.submit-con .submit-total{
+    margin-right: 10px;
+    font-size: 18px;
+    color: #c60023;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.submit-con .order-submit{
+    height: 50px;
+    line-height: 50px;
+    width: 100px;
+    text-align: center;
+}

@@ -100,7 +100,7 @@ var page ={
         //提交购物车
         $(document).on('click','.btn-submit',function () {
             if (_this.data.cartInfo && _this.data.cartInfo.cartTotalPrice > 0 ){
-                window.location.href = "./confirm.html"
+                window.location.href = "./order-confirm.html"
             }else {
                 mm.errorTips("怎么也要挑个商品吧。")
             }
